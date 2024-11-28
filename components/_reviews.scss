@@ -1,0 +1,61 @@
+.clients{
+    
+    margin-top: 15rem;
+    h1{
+        text-align: right;
+        margin-right: 10rem;
+        margin-top: 8rem;
+        color: white;
+        font-size: 4rem;
+        font-family: $main-font;
+        font-weight: normal;
+        transform: translateY(-50px);
+
+        span{
+            background-color: $label-color;
+        }
+    }
+
+    section.cards-container{
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .card{
+                background-color: #2b252e;
+                padding: 40px;
+                color: white;
+                line-height: 1.5;
+                margin: 10px;
+
+                p{
+                    max-width : 200px;
+                    font-family: $primary-font;
+                    color: rgb(197, 197, 197);
+                }
+
+                .user-info{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .user-img{
+                        margin-right: 20px;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 100px;
+                        background: url("https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") $bg-image-cover;
+                    }
+                    .user-img2{
+                        background: url("https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") $bg-image-cover;
+                    }
+                    .user-img3{
+                        background: url("https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") $bg-image-cover;
+                    }
+                }
+            }
+        }
+    }
+}

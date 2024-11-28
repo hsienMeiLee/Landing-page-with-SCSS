@@ -1,0 +1,107 @@
+.projects{
+    overflow-x: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    .title{
+        margin-left: 10rem;
+        margin-top: 8rem;
+        color: white;
+        font-size: 4rem;
+        font-family: $main-font;
+        font-weight: normal;
+        transform: translateY(-50px);
+        
+
+        span{
+            background-color: $label-color;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 3rem;
+            margin-left: 25px;
+        }
+    }
+
+    .images-container{
+        width: 100%;
+        padding: 2rem;
+        margin-top: 2rem;
+
+        @media screen and (max-width : 576px){
+            padding: 1rem;
+        }
+    }
+
+    .images{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin-bottom: 4rem;
+
+        img{
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        img:hover{
+            transform: scale(1.01);
+        }
+    }
+
+    .img-one{
+        grid-column: 1;
+    }
+    .img-two{
+        grid-column: 2;
+    }
+    .img-three{
+        grid-column: 3;
+    }
+    .img-fout{
+        grid-column: 4;
+    }
+
+    @media screen and (max-width : 1024px){
+        .images-container .images{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+
+            .img-one, .img-two, .img-three, .img-four{
+                grid-column: auto;
+            }
+        }
+    }
+
+    @media screen and (max-width : 640px){
+        .images-container{
+            padding: 0.5rem;
+        }
+        .images-container .images{
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin: 0;
+        }
+
+        img{
+            margin:0.5rem 0;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        .images-container {
+            padding: 0.5rem; 
+            
+            .images-container .images {
+                margin: 0;
+                width: 100%;
+                
+                img {
+                    width: 100%;
+                    margin: 0.25rem 0;
+                }
+            }
+        }
+    }
+}

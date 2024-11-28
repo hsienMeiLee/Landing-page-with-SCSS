@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.about {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-family: sans-serif;
+  margin-top: 23rem;
+  padding: 3rem 5rem;
+}
+.about p {
+  line-height: 1.7;
+  color: #e8d4e5;
+  max-width: 600px;
+  margin: 10px 0;
+}
+.about p span {
+  padding: 5px;
+  background: linear-gradient(to left, #35d08f, #e32e64);
+  border-radius: 100px;
+}
+.about .two {
+  align-self: flex-end;
+}
+@media screen and (max-width: 1024px) {
+  .about .two {
+    align-self: start;
+    margin: 4vh 0;
+  }
+}
+
+footer {
+  margin-top: 10rem;
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: rgb(44, 44, 44);
+}
+footer h1 {
+  font-size: 2rem;
+}
+footer p {
+  max-width: 400px;
+  font-family: sans-serif;
+  line-height: 25px;
+}
+footer .about-company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-container {
+  margin-right: 40px;
+  margin-top: 20px;
+}
+footer .footer-container h1 {
+  margin-bottom: 50px;
+}
+footer .footer-container p {
+  font-family: sans-serif;
+}
+.frame-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+}
+.frame-container .gradient {
+  width: 72%;
+  height: 76%;
+  position: absolute;
+  bottom: 130px;
+  background: linear-gradient(to left, #35d08f, #e32e64);
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.frame-container header {
+  width: 70%;
+  height: 70%;
+  margin-top: 2rem;
+  background-image: url("https://images.unsplash.com/photo-1655669832303-58be6a0e42ad?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  position: relative;
+  background-size: cover;
+  bottom: 70px;
+  background-position: center 40%;
+}
+.frame-container header .social {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-left: 10px;
+  text-align: center;
+  flex-direction: column;
+}
+.frame-container header .social .line {
+  margin: 0 auto;
+  width: 4px;
+  border-radius: 10px;
+  height: 20%;
+  background-color: #ae81bf;
+  margin-bottom: 20px;
+}
+.frame-container header .social .fa-brands {
+  margin-bottom: 10px;
+}
+.frame-container header h1 {
+  margin-left: 50px;
+  color: white;
+  font-size: 7rem;
+  font-family: "Parkinsans", sans-serif;
+  font-weight: normal;
+  transform: translateY(-50px);
+  z-index: 1000;
+}
+@media screen and (max-width: 640px) {
+  .frame-container header h1 {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .frame-container header h1 {
+    font-size: 5rem;
+  }
+}
+
+.container {
+  height: 50vh;
+  background: linear-gradient(to right, #4f2d62, #ac39ea);
+}
+.container nav {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Parkinsans", sans-serif;
+}
+.container nav ul {
+  margin-right: 40px;
+  margin-top: 20px;
+}
+.container nav ul li {
+  display: inline;
+  list-style: none;
+  margin-left: 30px;
+}
+.container nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.projects {
+  overflow-x: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.projects .title {
+  margin-left: 10rem;
+  margin-top: 8rem;
+  color: white;
+  font-size: 4rem;
+  font-family: "Parkinsans", sans-serif;
+  font-weight: normal;
+  transform: translateY(-50px);
+}
+.projects .title span {
+  background-color: rgba(174, 129, 191, 0.3921568627);
+}
+@media screen and (max-width: 768px) {
+  .projects .title {
+    font-size: 3rem;
+    margin-left: 25px;
+  }
+}
+.projects .images-container {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 576px) {
+  .projects .images-container {
+    padding: 1rem;
+  }
+}
+.projects .images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+.projects .images img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+.projects .images img:hover {
+  transform: scale(1.01);
+}
+.projects .img-one {
+  grid-column: 1;
+}
+.projects .img-two {
+  grid-column: 2;
+}
+.projects .img-three {
+  grid-column: 3;
+}
+.projects .img-fout {
+  grid-column: 4;
+}
+@media screen and (max-width: 1024px) {
+  .projects .images-container .images {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .projects .images-container .images .img-one, .projects .images-container .images .img-two, .projects .images-container .images .img-three, .projects .images-container .images .img-four {
+    grid-column: auto;
+  }
+}
+@media screen and (max-width: 640px) {
+  .projects .images-container {
+    padding: 0.5rem;
+  }
+  .projects .images-container .images {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0;
+  }
+  .projects img {
+    margin: 0.5rem 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .projects .images-container {
+    padding: 0.5rem;
+  }
+  .projects .images-container .images-container .images {
+    margin: 0;
+    width: 100%;
+  }
+  .projects .images-container .images-container .images img {
+    width: 100%;
+    margin: 0.25rem 0;
+  }
+}
+
+.clients {
+  margin-top: 15rem;
+}
+.clients h1 {
+  text-align: right;
+  margin-right: 10rem;
+  margin-top: 8rem;
+  color: white;
+  font-size: 4rem;
+  font-family: "Parkinsans", sans-serif;
+  font-weight: normal;
+  transform: translateY(-50px);
+}
+.clients h1 span {
+  background-color: rgba(174, 129, 191, 0.3921568627);
+}
+.clients section.cards-container .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.clients section.cards-container .cards .card {
+  background-color: #2b252e;
+  padding: 40px;
+  color: white;
+  line-height: 1.5;
+  margin: 10px;
+}
+.clients section.cards-container .cards .card p {
+  max-width: 200px;
+  font-family: sans-serif;
+  color: rgb(197, 197, 197);
+}
+.clients section.cards-container .cards .card .user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients section.cards-container .cards .card .user-info .user-img {
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background: url("https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center/cover;
+}
+.clients section.cards-container .cards .card .user-info .user-img2 {
+  background: url("https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center/cover;
+}
+.clients section.cards-container .cards .card .user-info .user-img3 {
+  background: url("https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center/cover;
+}
+
+body {
+  background-color: #211f22;
+}/*# sourceMappingURL=style.css.map */

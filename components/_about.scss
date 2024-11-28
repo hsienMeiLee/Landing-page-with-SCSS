@@ -1,0 +1,38 @@
+.about{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-family: $primary-font;
+    margin-top: 23rem;
+    padding: 3rem 5rem;
+    
+    p{
+        line-height: 1.7;
+        color: #e8d4e5;
+        max-width: 600px;
+        margin: 10px 0;
+
+        span{
+            padding: 5px;
+            background: $gradient;
+            border-radius: 100px;
+        }
+
+    }
+
+    .two{
+        align-self: flex-end;
+
+    }
+
+    @media screen and (max-width : 1024px){
+        .two{
+            align-self: start;
+            margin: 4vh 0;
+        }
+    }
+}
+
